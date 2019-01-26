@@ -1,0 +1,148 @@
+body {
+    background-color: black;
+}
+div.carousel-item.active {
+    position: relative;
+}
+.main-page {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    max-width: 100%;
+}
+div.dropdown-menu.show {
+    width: 10%;
+    margin: 0;
+}
+div.dropdown-menu{
+    background-color: #000;
+    width: 40px;
+    margin: 0;
+}
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding-top: 15px;
+}
+li.nav-item {
+    /* border: 1px solid gray; */
+    border-radius: 5px;
+    margin-left: 5px;
+    opacity: 1;
+}
+li.nav-item:hover {
+   background-color: transparent;
+}
+a.nav-link {
+    text-transform: uppercase;
+    color: #083877;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #ccc;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #ccc;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #ccc;
+    background-color: transparent;
+    opacity: 0.5;
+}
+.dropdown-menu {
+    border: none;
+}
+.navbar-brand {
+    text-align: right;
+    padding-top: 15px;
+}
+.navbar-brand img {
+    max-width: 100%;
+}
+.main-page > .col-lg-5.col-6.col-md-5 {
+    max-width: 100%;
+}
+.col-lg-5.col-6.col-md-5 {
+    text-align: right; 
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: black;
+}
+.dropdown-item {
+    color: #ccc;
+}
+.row {
+    flex-wrap: nowrap;
+    width: 100%;
+}
+a.navbar-brand .img2 {
+    display: none;
+}
+div .carousel-item {
+    background-image: url(../img/main_page_single_solo_only_3.jpg);
+}
+@media screen and (max-width: 991px) {
+    a.dropdown-item {
+        color: #d4d4d4;
+    }
+    a.navbar-brand .img1 {
+            display: none;
+        }
+    a.navbar-brand .img2 {
+            display: block;
+        }
+    
+    div .carousel-item {
+        background-image: url(../Galleries/Akt_I/img/Gal_Akt_1_Slika_13.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    }
+@media screen and (max-width: 600px) {
+    .col-lg-5.col-6.col-md-5 {
+        text-align: right;
+    }
+    a.navbar-brand .img2 {
+        display: none;
+    }
+    
+}
+div.col-md-4.col-sm-6.copyright {
+    text-align: right;
+}
+.footer {
+	position: fixed;
+	width: 100%;
+	height: 113px;
+	bottom: -80px;
+	background: transparent;
+    display: block;
+    color: #083877;
+}
+.footer:hover {
+	bottom: 0;
+}
+#success_message {
+    text-align: center;
+}
+#error_message {
+    text-align: center;
+}
