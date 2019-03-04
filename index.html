@@ -13,91 +13,114 @@
 </head>
 
 <body>
-  <div class="main-page">
-    <div class="row">
-      <div class="col-lg-7 col-6 col-md-7">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <!-- <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-              </li>-->
-              <li class="nav-item dropdown">
-                <a class="nav-link" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
-                  gallery
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="./Galleries/Akt_I/Akt_1.html">Akt I</a>
-                  <a class="dropdown-item" href="./Galleries/Akt_II/Akt_2.html">Akt II</a>
-                  <a class="dropdown-item" href="./Galleries/Glamour I/Glamour_1.html">Glamour I</a>
-                  <a class="dropdown-item" href="./Galleries/Glamour_II/Glamour_2.html">Glamour II</a>
-                  <a class="dropdown-item" href="./Galleries/Halloween/Halloween.html">Halloween</a>
-                  <a class="dropdown-item" href="./Galleries/Portraits/Portraits.html">Portrait</a>
-                  <a class="dropdown-item" href="./Galleries/Sword_I/Sword_1.html">Sword I</a>
-                  <a class="dropdown-item" href="./Galleries/Sword_II/Sword_2.html">Sword II</a>
-                </div>
-              </li>
-              <!--<li class="nav-item">-->
-              <!--  <a class="nav-link" href="./contact.html">Contact</a>-->
-              <!--</li>-->
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="col-lg-5 col-6 col-md-5">
-        <a class="navbar-brand" href="./index.html"><img class="img1" src="./img/odabranatamnija.png" alt="logo"></a>
-        <a class="navbar-brand" href="./index.html"><img class="img2" src="./img/logo_za_sajt_mala_rez_80px.png" alt="logo"></a>
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">NR_Photography</h4>
+        </div>
+        <div class="modal-body">
+          <p>This website contains explicit content. If you click YES, you are entering website on your own consent
+          </p>
+          <p>Ovaj website sadrzi eksplicitan sadrzaj. Klikom YES, pristupate sadrzaju na svoju odgovornost</p>
+          <button id="click" type="button"><a class="yes"></a>YES</button>
+          <button id="close" type="button"><a class="no" href="www.google.com"></a>NO</button>
+        </div>
       </div>
     </div>
   </div>
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item">
-        <!--<img class="d-block w-100" src="./img/main_page_single_solo_only_3.jpg" data-color="lightblue" alt="First Image">-->
-      </div>
-      <!-- Ugasen deo slidera dok se ne nadju prave slike  -->
-      <!-- <div class="carousel-item">
-        <img class="d-block w-100" src="./img/slika2.jpg" data-color="firebrick" alt="Second Image">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./img/slika3.jpg" data-color="violet" alt="Third Image">
-      </div> -->
-    </div>
-  </div>
-  <div class="footer">
-    <div class="container">
+  <div class="overlay" id="mainbody">
+    <div class="main-page">
       <div class="row">
-        <div class="col-md-4 col-sm-6 contact">
-          <h5>Contact:</h5>
-          <h6><a href="./Email_form/formpage.html" target="_blank">Email</a></h6>
-          <h6><a href="https://www.instagram.com/_nr_photography__/" target="_blank">Instagram</a></h6>
+        <div class="col-lg-7 col-6 col-md-7">
+          <nav class="navbar navbar-expand-lg navbar-dark ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>-->
+                <li class="nav-item dropdown">
+                  <a class="nav-link" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                    gallery
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="./Galleries/Akt_I/Akt_1.html">Akt I</a>
+                    <a class="dropdown-item" href="./Galleries/Akt_II/Akt_2.html">Akt II</a>
+                    <a class="dropdown-item" href="./Galleries/Glamour I/Glamour_1.html">Glamour I</a>
+                    <a class="dropdown-item" href="./Galleries/Glamour_II/Glamour_2.html">Glamour II</a>
+                    <a class="dropdown-item" href="./Galleries/Halloween/Halloween.html">Halloween</a>
+                    <a class="dropdown-item" href="./Galleries/Portraits/Portraits.html">Portrait</a>
+                    <a class="dropdown-item" href="./Galleries/Sword_I/Sword_1.html">Sword I</a>
+                    <a class="dropdown-item" href="./Galleries/Sword_II/Sword_2.html">Sword II</a>
+                  </div>
+                </li>
+                <!--<li class="nav-item">-->
+                <!--  <a class="nav-link" href="./contact.html">Contact</a>-->
+                <!--</li>-->
+              </ul>
+            </div>
+          </nav>
         </div>
-        <div class="col-md-4 copyright">
+        <div class="col-lg-5 col-6 col-md-5">
+          <a class="navbar-brand" href="./index.html"><img class="img1" src="./img/odabranatamnija.png" alt="logo"></a>
+          <a class="navbar-brand" href="./index.html"><img class="img2" src="./img/logo_za_sajt_mala_rez_80px.png"
+              alt="logo"></a>
+        </div>
+      </div>
+    </div>
 
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <!--<img class="d-block w-100" src="./img/main_page_single_solo_only_3.jpg" data-color="lightblue" alt="First Image">-->
         </div>
-        <div class="col-md-4 col-sm-6 copyright">
-          <h5>Design</h5>
-          <h6>Marko Jordanovic</h6>
-          <h6><a href="#" target="_blank">Milos Djordjevic</a></h6>
+        <!-- Ugasen deo slidera dok se ne nadju prave slike  -->
+        <!-- <div class="carousel-item">
+          <img class="d-block w-100" src="./img/slika2.jpg" data-color="firebrick" alt="Second Image">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./img/slika3.jpg" data-color="violet" alt="Third Image">
+        </div> -->
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 contact">
+            <h5>Contact:</h5>
+            <h6><a href="./Email_form/formpage.html" target="_blank">Email</a></h6>
+            <h6><a href="https://www.instagram.com/_nr_photography__/" target="_blank">Instagram</a></h6>
+          </div>
+          <div class="col-md-4 copyright">
+
+          </div>
+          <div class="col-md-4 col-sm-6 copyright">
+            <h5>Design</h5>
+            <h6>Marko Jordanovic</h6>
+            <h6><a href="#" target="_blank">Milos Djordjevic</a></h6>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
 
