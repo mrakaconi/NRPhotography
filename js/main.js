@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   var $item = $('.carousel-item');
   var $wHeight = $(window).height();
@@ -7,9 +5,7 @@ $(document).ready(function () {
   $item.height($wHeight);
   $item.addClass('full-screen');
 
-  $("#myModal").modal('show');
-  $("#mainbody").addClass("darken");
-
+  // $("#myModal").modal('show');
 
   $('#click').on('click', function () {
     $('#mainbody').removeClass("darken");
@@ -39,3 +35,15 @@ $(document).ready(function () {
     $("div").animate({ bottom: '0' }, 1000);
   });
 });
+
+$(document).ready(function () {
+  // Get saved data from sessionStorage
+  var visited = sessionStorage.getItem('visited');
+  if (visited !== "true") {
+    $('#myModal').modal('show');
+    sessionStorage.setItem('visited', "true"); // Save data to sessionStorage
+}
+});
+// setTimeout(function() {
+//   $('#myModal').modal('hide');
+// }, 20000);
